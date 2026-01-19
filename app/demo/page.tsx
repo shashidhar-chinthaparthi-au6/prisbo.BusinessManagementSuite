@@ -102,7 +102,7 @@ export default function DemoRequestPage() {
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold text-neutral-dark mb-2">Request a Demo</h1>
             <p className="text-neutral">
-              See how Prisbo can transform your business management. Fill out the form below and we'll get in touch.
+              See how Prisbo can transform your business management. Fill out the form below and we&apos;ll get in touch.
             </p>
           </div>
 

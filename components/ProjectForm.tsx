@@ -59,9 +59,9 @@ export default function ProjectForm({ project }: ProjectFormProps) {
     const urlParams = new URLSearchParams(window.location.search);
     const customerId = urlParams.get('customerId');
     if (customerId && !project?._id) {
-      setFormData({ ...formData, customerId });
+      setFormData((prev) => ({ ...prev, customerId }));
     }
-  }, []);
+  }, [project?._id]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
